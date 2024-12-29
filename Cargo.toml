@@ -1,0 +1,16 @@
+[package]
+name = "o3json5"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "o3json5"
+crate-type = ["cdylib"]
+
+[dependencies]
+json5 = "0.4.1"
+pyo3 = {version = "0.23.*", features = ["extension-module", "abi3-py38"]}
+serde = { version = "1.0.217", features = ["derive"] }
+serde_json = "1.0.134"
+thiserror = "1.0"

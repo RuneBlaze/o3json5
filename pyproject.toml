@@ -1,0 +1,35 @@
+[build-system]
+requires = ["maturin>=1.6,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "o3json5"
+requires-python = ">=3.8"
+description = "A fast JSON5 parser for Python, written in Rust 🦀"
+authors = [{ name = "RuneBlaze", email = "liubaqiao@gmail.com" }]
+readme = "README.md"
+license = { text = "MIT" }
+keywords = ["json", "json5", "parser", "rust", "fast"]
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Text Processing :: Markup",
+]
+dependencies = []
+dynamic = ["version"]
+
+[project.urls]
+Homepage = "https://github.com/RuneBlaze/o3json5"
+Documentation = "https://github.com/RuneBlaze/o3json5#readme"
+
+[tool.maturin]
+features = ["pyo3/extension-module"]
